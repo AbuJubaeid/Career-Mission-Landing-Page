@@ -1,0 +1,379 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Jersey 25", sans-serif;
+  color: #0d1321;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #e6e6fa, #b8e7fa);
+}
+
+.banner {
+  background-color: #e6edf9;
+  border-radius: 16px;
+  padding: 60px 40px;
+  margin: 80px 60px;
+}
+
+.btn {
+  background-image: linear-gradient(to right, #ffa500, #ffd447);
+  padding: 17px 24px;
+  border: solid #ffa500 3px;
+  border-radius: 10px;
+  opacity: 80%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px;
+}
+.btn:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(244, 114, 114),
+    rgb(246, 246, 166)
+  );
+}
+
+/* headet */
+
+#header {
+  background-color: #ffffff;
+  border: solid #c6dbff 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px;
+}
+#header p {
+  font-size: 28px;
+  font-weight: bold;
+}
+#header p span {
+  color: #ffa500;
+}
+
+/* banner */
+
+#banner .banner {
+  text-align: center;
+}
+
+#banner .banner_content {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+#banner .banner_content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 68px;
+}
+#banner .banner_content p {
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 70%;
+}
+
+/* blog */
+
+#blog .blog_heading {
+  text-align: center;
+  margin-bottom: -60px;
+}
+#blog h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+#blog p {
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 70%;
+}
+
+#blog .blog_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#blog .blog_content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+}
+#blog .blog_content p {
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 70%;
+  margin-bottom: 24px;
+}
+
+/* inspiration */
+
+#inspiration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#inspiration .inspiration_content {
+  text-align: center;
+}
+#inspiration .inspiration_content h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+#inspiration .inspiration_content p {
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 70%;
+  margin-bottom: 24px;
+}
+#inspiration .youtube_video {
+  width: 1100px;
+  height: 620px;
+  border: solid black 1px;
+  border-radius: 16px;
+  padding: 32px;
+}
+#inspiration .youtube_video iframe {
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 16px;
+}
+
+/* target */
+
+#target .target_heading {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: -60px;
+}
+#target .target_heading h1 {
+  font-size: 32px;
+}
+#target .target_heading p {
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 70%;
+}
+
+#target .target_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#target .target_card div {
+  width: 200px;
+  line-height: 40px;
+  background-image: linear-gradient(to bottom, #e6e6fa, #b8e7fa);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0px 4px 20px;
+}
+#target .target_card div a {
+  font-size: 16px;
+}
+
+/* footer */
+
+footer {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  font-size: 16px;
+}
+
+footer .logo a {
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #header {
+    padding: 20px 60px;
+  }
+  #header .btn {
+    font-size: 20px;
+  }
+  #header p {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  #banner .banner {
+    margin: 60px;
+  }
+
+  #banner .banner_content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+  #banner .banner_content p {
+    font-size: 25px;
+    line-height: 26px;
+    opacity: 70%;
+    margin-top: 15px;
+  }
+  #banner .btn {
+    font-size: 20px;
+  }
+  #blog .banner {
+    margin: 60px;
+  }
+  #blog .blog_heading {
+    margin-top: 60px;
+    margin-bottom: -50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #blog .blog_content {
+    flex-direction: column-reverse;
+  }
+  #blog .blog_content img {
+    width: 100%;
+  }
+  #blog h1 {
+    font-size: 40px;
+  }
+  #blog p {
+    font-size: 20px;
+  }
+  #blog .btn {
+    font-size: 20px;
+  }
+
+  #inspiration .inspiration_content {
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #inspiration .inspiration_content h1 {
+    font-size: 40px;
+  }
+  #inspiration .inspiration_content p {
+    font-size: 20px;
+  }
+
+  #inspiration .youtube_video {
+    width: 780px;
+    height: 500px;
+  }
+  #inspiration .youtube_video iframe {
+    width: 100%;
+    height: 100%;
+  }
+  #target .banner {
+    margin: 60px;
+  }
+  #target .target_heading h1 {
+    font-size: 40px;
+  }
+  #target .target_heading p {
+    font-size: 20px;
+  }
+  #target .target_heading {
+    margin-bottom: 10px;
+  }
+  #target .target_card {
+    flex-direction: column;
+  }
+  #target .target_card div {
+    margin-bottom: 80px;
+  }
+
+  footer p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  footer .logo {
+    margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  #header {
+    padding: 20px 20px;
+  }
+  #header .btn {
+    font-size: 16px;
+  }
+  #header p {
+    font-size: 30px;
+  }
+
+  #banner .banner {
+    margin: 0px;
+  }
+
+  #banner .banner_content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+  #banner .banner_content p {
+    font-size: 20px;
+    line-height: 26px;
+    opacity: 70%;
+    margin-top: 15px;
+  }
+  #blog .banner {
+    margin: 0px;
+  }
+  #blog .blog_heading {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #blog .blog_content {
+    flex-direction: column-reverse;
+  }
+  #blog .blog_content img {
+    width: 100%;
+  }
+
+  #inspiration .inspiration_content {
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #inspiration .youtube_video {
+    width: 280px;
+    height: 200px;
+  }
+  #inspiration .youtube_video iframe {
+    width: 100%;
+    height: 100%;
+  }
+  #target .banner {
+    margin: 0px;
+  }
+  #target .target_heading {
+    margin-bottom: 10px;
+  }
+  #target .target_card {
+    flex-direction: column;
+  }
+  #target .target_card div {
+    margin-bottom: 80px;
+  }
+
+  footer {
+    flex-direction: column;
+    margin-top: -60px;
+  }
+  footer p {
+    margin-bottom: 20px;
+  }
+  footer .logo {
+    margin-left: -30px;
+  }
+}
